@@ -35,7 +35,7 @@ A marcação é confirmada diretamente com a Angela no WhatsApp. O formulário a
 
 O hero usa um recorte do vídeo fornecido pelo usuário. As comparações de cabelo receberam edição com IA e não preservam todos os detalhes das fotografias originais. As imagens dos prémios e certificados são apresentações gráficas recriadas a partir dos documentos fornecidos; não substituem os documentos oficiais.
 
-O destaque de avaliações apresenta a nota 5,0 e o patamar de 116+ avaliações confirmado pelo usuário. Não há atualização automática. A avaliação de Eli Suarez foi transcrita da captura fornecida. Os outros dois excertos têm links para a fonte secundária consultada; não foram conferidos diretamente no Google.
+O destaque de avaliações apresenta a nota 5,0 e o patamar de 116+ avaliações confirmado pelo usuário. Não há atualização automática. Os cartões apresentam Ana Catarina Silva, Tania Vicente e Eli Suarez, a partir dos relatos fornecidos pelo usuário, com ajustes de ortografia e pontuação e seleção de trechos sem mudar o sentido. Ana e Tania foram também conferidas diretamente nos perfis públicos do Google Maps; as suas fotos públicas estão em arquivos WebP locais, sem geração com IA. Eli foi conferida na captura fornecida e usa as iniciais. Os cartões não têm links individuais nem referências a diretórios; o acesso geral às avaliações continua no Google. A consulta não disponibilizou todas as avaliações do salão.
 
 O endereço do GitHub Pages é público. O domínio definitivo é uma configuração separada.
 
