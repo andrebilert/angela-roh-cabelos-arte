@@ -38,7 +38,17 @@ O repositório de referência enviado foi `andrebilert/landing-page-manoel`, cuj
 
 As artes de prémios e certificados continuam como apresentações gráficas de documentos fornecidos; não são novos certificados. Não declarar certificações específicas de produtos sem documentação correspondente. Não incluir aggregateRating/review autoatribuído ao próprio salão esperando estrelas no resultado: a documentação do Google não recomenda esse uso.
 
-## Referências oficiais
+## Desempenho
+
+Em 11/10/2026, o relatório do usuário marcou 99 em desempenho, 100 em acessibilidade, boas práticas e SEO. O LCP era de 2,3 segundos. A atualização reúne os oito CSS numa única requisição, preservando a ordem e todas as regras originais, e evita carregar a imagem ampliada do prémio antes de o visitante abrir o diálogo. As fotografias, o vídeo, os textos e os efeitos não foram modificados. Nenhum recurso identifica o Lighthouse para alterar o comportamento do site.
+
+Os CSS originais continuam editáveis em `dist/`. Depois de os alterar, execute `python scripts/bundle_styles.py`; o script gera um CSS com hash no nome e atualiza a referência no HTML. O GitHub Actions verifica se o arquivo está atualizado antes da publicação. O README continua apenas local.
+
+O tempo de cache de dez minutos é definido pelo GitHub Pages. Não foi adicionado `_headers`, `.htaccess` ou outro arquivo sem suporte nessa hospedagem. Esse aviso não afeta diretamente a nota, e resultados de laboratório podem variar conforme rede e dispositivo.
+
+Referências de desempenho: [pontuação do Lighthouse](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) e [otimização de LCP](https://web.dev/articles/optimize-lcp).
+
+## Referências oficiais de busca
 
 - [Negócios locais e dados estruturados](https://developers.google.com/search/docs/appearance/structured-data/local-business)
 - [Visibilidade local no Google](https://support.google.com/business/answer/7091)
