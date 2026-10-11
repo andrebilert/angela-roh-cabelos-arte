@@ -1,0 +1,50 @@
+/* Full-width chapters: clear boundaries and calm transitions in the brand palette. */
+html { scroll-padding-top: 105px; }
+.section-panel {
+  position: relative;
+  isolation: isolate;
+  background: #15140f;
+  border-top: 1px solid #c3a16b45;
+}
+.section-panel--warm { background: #242019; }
+.section-panel::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 3%, #c3a16b90 25%, #f0d6a0 50%, #c3a16b90 75%, transparent 97%);
+  transform-origin: center;
+}
+.section-panel::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  top: -5px;
+  left: calc(50% - 4px);
+  width: 8px;
+  height: 8px;
+  border: 1px solid #c3a16b;
+  background: #201d16;
+  transform: rotate(45deg);
+}
+.section-panel > .section { padding-block: 96px; background: transparent; border: 0; }
+.section-panel > .intro { padding-block: 86px; }
+.section-panel > .showcase { padding-block: 72px; }
+.header .nav a.is-current { color: #e3c38c; }
+.header .nav a.is-current::after { transform: scaleX(1); }
+@media(prefers-reduced-motion:no-preference) {
+  .sections-ready .section-panel::before { opacity: .3; transform: scaleX(.2); transition: opacity .8s ease, transform 1s cubic-bezier(.16,1,.3,1); }
+  .sections-ready .section-panel.is-entered::before { opacity: 1; transform: scaleX(1); }
+}
+@media(max-width:1280px) { html { scroll-padding-top: 89px; } }
+@media(max-width:720px) {
+  html { scroll-padding-top: 81px; }
+  .section-panel > .section { padding-block: 64px; }
+  .section-panel > .intro { padding-block: 60px; }
+  .section-panel > .showcase { padding-block: 48px; }
+}

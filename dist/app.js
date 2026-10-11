@@ -18,7 +18,7 @@
       menuButton.focus();
     }
   });
-  const desktopQuery = window.matchMedia('(min-width: 1001px)');
+  const desktopQuery = window.matchMedia('(min-width: 1281px)');
   desktopQuery.addEventListener('change', () => setMenu(false));
 
   const booking = document.getElementById('booking-dialog');
@@ -69,58 +69,25 @@
     else window.location.assign(whatsapp);
     booking.close();
   });
-  document.querySelectorAll('[data-image]').forEach(button => {
-    button.addEventListener('click', () => {
+  document.addEventListener('click', event => {
+      const button = event.target.closest('[data-image]');
+      if (!button) return;
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      if (!supportsDialogs) {
+        if (button.tagName !== 'A') window.open(button.dataset.image, '_blank', 'noopener,noreferrer');
+        return;
+      }
+      event.preventDefault();
       const image = document.getElementById('gallery-image');
       image.src = button.dataset.image;
       image.alt = button.dataset.caption;
       image.removeAttribute('width');
       image.removeAttribute('height');
       document.getElementById('gallery-caption').textContent = button.dataset.caption;
-      if (!openDialog(gallery, button)) window.open(button.dataset.image, '_blank', 'noopener,noreferrer');
-    });
+      const returnFocus = button.closest('[data-carousel-copy]')
+        ? document.getElementById('credentials-viewport') : button;
+      openDialog(gallery, returnFocus);
   });
   document.querySelector('[data-open-privacy]').addEventListener('click', event => openDialog(privacy, event.currentTarget));
-  const viewport = document.getElementById('credentials-viewport');
-  if (viewport) {
-    const cards = [...viewport.querySelectorAll('.credential-card')];
-    const controls = document.querySelector('.credentials-controls');
-    const previous = controls.querySelector('[data-carousel-step="-1"]');
-    const next = controls.querySelector('[data-carousel-step="1"]');
-    const counter = controls.querySelector('.credentials-count');
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const positionOf = card => card.offsetLeft - cards[0].offsetLeft;
-    function updateCarousel() {
-      const first = Math.max(0, cards.findIndex(card => positionOf(card) + card.offsetWidth > viewport.scrollLeft + 8));
-      const visible = cards.filter(card => positionOf(card) < viewport.scrollLeft + viewport.clientWidth - 8 && positionOf(card) + card.offsetWidth > viewport.scrollLeft + 8);
-      const last = cards.indexOf(visible.at(-1));
-      const text = `${first + 1}${last > first ? `–${last + 1}` : ''} de ${cards.length}`;
-      if (counter.textContent !== text) counter.textContent = text;
-      previous.disabled = viewport.scrollLeft < 8;
-      next.disabled = viewport.scrollLeft >= viewport.scrollWidth - viewport.clientWidth - 8;
-    }
-    function goTo(left) {
-      viewport.scrollTo({left, behavior: reducedMotion.matches ? 'instant' : 'smooth'});
-    }
-    function step(direction) {
-      const closest = cards.reduce((best, card, i) => Math.abs(positionOf(card) - viewport.scrollLeft) < Math.abs(positionOf(cards[best]) - viewport.scrollLeft) ? i : best, 0);
-      const target = Math.min(cards.length - 1, Math.max(0, closest + direction));
-      goTo(positionOf(cards[target]));
-    }
-    controls.hidden = false;
-    previous.addEventListener('click', () => step(-1));
-    next.addEventListener('click', () => step(1));
-    viewport.addEventListener('scroll', updateCarousel, {passive: true});
-    viewport.addEventListener('keydown', event => {
-      if (event.target !== viewport) return;
-      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-      event.preventDefault();
-      if (event.key === 'Home') goTo(0);
-      else if (event.key === 'End') goTo(viewport.scrollWidth);
-      else step(event.key === 'ArrowLeft' ? -1 : 1);
-    });
-    new ResizeObserver(updateCarousel).observe(viewport);
-    updateCarousel();
-  }
   document.getElementById('year').textContent = String(new Date().getFullYear());
 })();

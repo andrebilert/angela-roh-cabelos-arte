@@ -1,0 +1,26 @@
+/* Marca para o site: monograma aprovado e assinatura da referência enviada. */
+.brand-logo { display: flex; flex-direction: row; align-items: center; gap: 10px; flex-shrink: 0; }
+.brand-logo .brand-monogram { width: 68px; height: 68px; object-fit: contain; flex-shrink: 0; mix-blend-mode: screen; }
+.brand-logo .brand-lettering { display: flex; flex-direction: column; align-items: center; color: #d5b16d; line-height: 1; letter-spacing: normal; }
+.brand-logo .brand-name { font-family: var(--serif); font-size: 27px; font-weight: 400; letter-spacing: 3px; line-height: 1.1; }
+.brand-logo .brand-lettering .brand-description { display: flex; flex-direction: column; align-items: center; gap: 5px; margin: 8px 0 0; color: #d5b16d; font-size: 7px; font-weight: 400; letter-spacing: 2px; line-height: 1.2; }
+.footer .brand-logo .brand-monogram { width: 76px; height: 76px; }
+@media(max-width:1000px) {
+  .brand-logo .brand-monogram { width: 54px; height: 54px; }
+  .brand-logo .brand-name { font-size: 24px; letter-spacing: 2px; }
+  .brand-logo .brand-lettering .brand-description { font-size: 6px; letter-spacing: 1.6px; gap: 4px; }
+}
+@media(max-width:720px) {
+  .brand-logo { gap: 5px; }
+  .brand-logo .brand-monogram { width: 44px; height: 44px; }
+  .brand-logo .brand-name { font-size: 19px; letter-spacing: 1.5px; }
+  .brand-logo .brand-lettering .brand-description { margin-top: 6px; font-size: 6px; letter-spacing: 1px; gap: 3px; }
+  .header-inner { gap: 10px; }
+  .footer .brand-logo .brand-monogram { width: 44px; height: 44px; }
+}
+@media(max-width:375px) {
+  .brand-logo .brand-monogram { width: 36px; height: 36px; }
+  .brand-logo .brand-name { font-size: 17px; letter-spacing: 1px; }
+  .brand-logo .brand-lettering .brand-description { font-size: 5.5px; letter-spacing: .6px; }
+  .footer .brand-logo .brand-monogram { width: 36px; height: 36px; }
+}

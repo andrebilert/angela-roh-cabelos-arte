@@ -1,0 +1,88 @@
+/* Motion adapted to Angela R.'s gold palette. No external runtime. */
+.hero-shell { position: relative; isolation: isolate; }
+.hero-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 24% 32%, #d8d8d510, transparent 58%);
+}
+.hero-line { display: inline-block; }
+.hero h1 em {
+  color: #c3a16b;
+  background: linear-gradient(110deg, #c3a16b 15%, #f6deb2 40%, #c3a16b 65%);
+  background-size: 220% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header { transition: box-shadow .35s ease, border-color .35s ease; }
+.header.is-scrolled { box-shadow: 0 8px 30px #0005; border-bottom-color: #c3a16b55; }
+.reading-progress {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #a68247, #e3c38c);
+  transform: scaleX(0);
+  transform-origin: left;
+  pointer-events: none;
+}
+.button { position: relative; isolation: isolate; overflow: hidden; }
+.button::after {
+  content: "";
+  position: absolute;
+  inset: -60% -40%;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 40%, #fff6 50%, transparent 60%);
+  transform: translateX(-85%);
+}
+.button .icon { transition: transform .3s ease; }
+.button:hover .icon, .button:focus-visible .icon { transform: translate(2px, -2px); }
+.button:active { transform: translateY(0) scale(.98); }
+.additional-service .icon { transition: transform .3s ease; }
+.additional-service:hover .icon, .additional-service:focus-visible .icon { transform: translate(3px, -3px); }
+.spotlight-surface { position: relative; isolation: isolate; }
+.spotlight-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(300px circle at var(--light-x, 50%) var(--light-y, 50%), #d6b77d1c, transparent 75%);
+  transition: opacity .35s ease;
+}
+.review-card, .credential-card, .visit-panel { transition: border-color .35s ease, box-shadow .35s ease; }
+.review-card:hover, .credential-card:focus-within, .visit-panel:hover { border-color: #c3a16b; box-shadow: 0 10px 28px #0002; }
+.care-item { transition: border-color .35s ease; }
+.care-item:hover { border-bottom-color: #c3a16b; }
+.credential-image img { transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.credential-image:hover img, .credential-image:focus-visible img { transform: scale(1.035); }
+.faq summary { transition: color .25s ease; }
+.faq summary:hover { color: #dededb; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion-ready .hero h1 em { animation: silver-text 1.6s ease-out .2s both; }
+  :where(.motion-ready .hero-actions) .button::after { animation: silver-sweep 1.1s ease .8s; }
+  .button:hover::after, .button:focus-visible::after { animation: silver-sweep .8s ease; }
+  dialog[open] { animation: dialog-arrive .32s cubic-bezier(.2,.7,.2,1); }
+  dialog[open]::backdrop { animation: backdrop-arrive .3s ease; }
+  .nav.is-open { animation: menu-arrive .25s ease; }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .spotlight-surface:hover::before { opacity: 1; }
+}
+@keyframes silver-sweep { from { transform: translateX(-85%); } to { transform: translateX(85%); } }
+@keyframes silver-text { from { background-position: 100% 50%; } to { background-position: 0% 50%; } }
+@keyframes dialog-arrive { from { opacity: 0; transform: translateY(15px) scale(.985); } to { opacity: 1; transform: none; } }
+@keyframes backdrop-arrive { from { opacity: 0; } to { opacity: 1; } }
+@keyframes menu-arrive { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .hero-visual { transform: none !important; }
+  .button:hover .icon, .button:focus-visible .icon, .additional-service:hover .icon,
+  .additional-service:focus-visible .icon, .credential-image:focus-visible img { transform: none; }
+  .spotlight-surface::before { display: none; }
+}

@@ -1,0 +1,125 @@
+/* Readable text across the site, preserving the compact photo gallery. */
+:root { --copy-size: 17px; --label-size: 12px; --link-size: 15px; }
+body { font-size: var(--copy-size); line-height: 1.75; }
+.announcement { font-size: 12px; line-height: 1.6; }
+.eyebrow, .hero-copy .eyebrow, .additional-care .eyebrow,
+.story-signature .eyebrow, .visit-panel .eyebrow, dialog .eyebrow {
+  font-size: var(--label-size); letter-spacing: 1.6px; line-height: 1.65;
+}
+.button, .button-small { font-size: var(--link-size); min-height: 52px; }
+.text-link, .hero-actions .text-link, .care-item .text-link,
+.story-copy .text-link, .service-guidance .text-link, .visit-panel .text-link {
+  font-size: var(--link-size); line-height: 1.5;
+}
+.header-inner { height: 104px; gap: 24px; }
+.nav { font-size: 15px; gap: 26px; }
+.header-cta { font-size: 14px; }
+.brand-logo .brand-monogram { width: 76px; height: 76px; }
+.brand-logo .brand-name { font-size: 32px; }
+.brand-logo .brand-lettering .brand-description { font-size: 10px; letter-spacing: 1.8px; gap: 4px; }
+.hero-description { font-size: var(--copy-size); line-height: 1.8; max-width: 440px; }
+.hero-video-caption { font-size: 11px; letter-spacing: 2px; }
+.values-strip { gap: 24px; }
+.values-strip span { font-size: 13px; letter-spacing: .4px; line-height: 1.6; }
+.intro p:last-of-type { font-size: var(--copy-size); max-width: 680px; line-height: 1.8; }
+.section-heading > p, .credentials .section-heading > p { font-size: var(--copy-size); max-width: 380px; line-height: 1.8; }
+.care-item p, .service-guidance p, .story-copy > p:not(.eyebrow),
+.steps-grid p, .faq > div > p:not(.eyebrow), .faq details p,
+.visit-copy > p:not(.eyebrow), dialog > p:not(.eyebrow) {
+  font-size: var(--copy-size); line-height: 1.8;
+}
+.care-item p { max-width: 530px; }
+.story-copy > p:not(.eyebrow) { max-width: 480px; }
+.steps-grid p { max-width: 320px; }
+.additional-service { font-size: 16px; line-height: 1.55; padding-block: 20px; }
+.additional-service .icon { flex-shrink: 0; }
+.professional-brands > span { font-size: 12px; max-width: 310px; line-height: 1.7; }
+.brand-loreal small { font-size: 10px; }
+.story-signature cite { font-size: 12px; }
+.signature-detail { font-size: 15px; line-height: 1.8; }
+.showcase-labels { font-size: 18px; font-weight: 500; letter-spacing: .4px; margin-bottom: 12px; color: var(--ink); }
+.showcase-figure h3 { font-size: 28px; }
+.credential-category { font-size: 12px; line-height: 1.6; letter-spacing: .6px; }
+.credential-card h3 { font-size: 26px; }
+.credential-card figcaption p { font-size: 14px; line-height: 1.7; min-height: 48px; }
+.google-rating-label { font-size: 12px; letter-spacing: 1.5px; }
+.rating-score .review-stars { font-size: 16px; }
+.rating-total > span { font-size: 15px; }
+.rating-invitation { font-size: 13px; line-height: 1.6; }
+.google-rating { min-width: 350px; }
+.review-card blockquote { font-size: 29px; }
+.review-author strong { font-size: 16px; }
+.review-author div > span { font-size: 13px; line-height: 1.6; }
+.review-avatar { font-size: 14px; }
+.review-card .text-link { font-size: 14px; }
+.reviews-footer > p { font-size: 15px; line-height: 1.8; }
+.faq summary { font-size: 17px; line-height: 1.6; padding-block: 24px; }
+.visit-copy > p:not(.eyebrow) { max-width: 450px; }
+.visit-contact div > span { font-size: 12px; }
+.visit-contact address, .visit-panel address { font-size: 16px; line-height: 1.8; }
+.visit-contact a { font-size: 19px; }
+.visit-contact small { font-size: 14px; line-height: 1.6; }
+.footer-links { font-size: 15px; }
+.footer-bottom { font-size: 13px; line-height: 1.7; }
+.booking-dialog label { font-size: 15px; }
+.booking-dialog label span, .form-note { font-size: 13px; }
+.booking-dialog input, .booking-dialog select, .booking-dialog textarea,
+input::placeholder, textarea::placeholder { font-size: 16px; }
+.gallery-dialog figcaption { font-size: 14px; line-height: 1.6; }
+.mobile-booking > div > span { font-size: 12px; }
+.mobile-booking .button { font-size: 14px; }
+
+@media(max-width:1280px) {
+  .header-inner { height: 88px; }
+  .brand-logo .brand-monogram { width: 60px; height: 60px; }
+  .brand-logo .brand-name { font-size: 28px; }
+  .brand-logo .brand-lettering .brand-description { font-size: 9px; letter-spacing: 1.4px; }
+  .header .nav { display: none; position: absolute; top: 88px; left: 0; right: 0; background: var(--charcoal); padding: 18px var(--gutter) 25px; border-bottom: 1px solid var(--dark-line); font-size: 17px; }
+  .header .nav.is-open { display: flex; flex-direction: column; gap: 5px; }
+  .header .nav a { padding-block: 12px; }
+  .menu-toggle { display: block; }
+  .header-cta { margin-left: auto; }
+}
+@media(max-width:1000px) {
+  :root { --copy-size: 16px; --link-size: 14px; }
+  .values-strip span { font-size: 12px; }
+  .google-rating { min-width: 320px; }
+  .review-card blockquote { font-size: 26px; }
+  .visit-contact { grid-template-columns: 1fr; }
+}
+@media(max-width:720px) {
+  .announcement { font-size: 11px; }
+  .header-inner { height: 80px; gap: 10px; }
+  .header .nav { top: 80px; }
+  .brand-logo { gap: 5px; }
+  .brand-logo .brand-monogram, .footer .brand-logo .brand-monogram { width: 44px; height: 44px; }
+  .brand-logo .brand-name { font-size: 19px; letter-spacing: 1.5px; }
+  .brand-logo .brand-lettering .brand-description { font-size: 6.5px; letter-spacing: 1px; gap: 3px; }
+  .header-cta { font-size: 11px; min-height: 42px; padding-inline: 10px; gap: 8px; }
+  .values-strip { gap: 14px; }
+  .values-strip span { font-size: 11px; }
+  .eyebrow, .hero-copy .eyebrow { letter-spacing: 1.2px; }
+  .hero-actions .button { font-size: 14px; }
+  .hero-description { max-width: 350px; }
+  .additional-service { font-size: 16px; }
+  .professional-brands > span { font-size: 11px; }
+  .showcase-labels { font-size: 17px; }
+  .showcase-figure h3 { font-size: 27px; }
+  .credential-category { font-size: 11px; }
+  .credential-card h3 { font-size: 25px; }
+  .credential-card figcaption p { font-size: 13px; }
+  .google-rating { min-width: 0; }
+  .reviews-footer > p { font-size: 14px; }
+  .faq summary { font-size: 16px; }
+  .footer-links { font-size: 14px; }
+  .footer-bottom { font-size: 12px; }
+  .mobile-booking strong { font-size: 20px; }
+  .mobile-booking .button { padding-inline: 16px; gap: 10px; }
+}
+@media(max-width:375px) {
+  .brand-logo .brand-monogram, .footer .brand-logo .brand-monogram { width: 36px; height: 36px; }
+  .brand-logo .brand-name { font-size: 17px; letter-spacing: 1px; }
+  .brand-logo .brand-lettering .brand-description { font-size: 6px; letter-spacing: .6px; }
+  .header-cta { font-size: 10px; padding-inline: 8px; }
+  .mobile-booking strong { font-size: 18px; }
+}
