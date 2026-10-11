@@ -14,15 +14,15 @@ O usuário pediu melhorar a descoberta no Google e nas ferramentas de IA sem alt
 
 ## Próximas ações na conta da cliente
 
-1. Cadastrar no Google Search Console uma propriedade **Prefixo do URL**: `https://andrebilert.github.io/angela-roh-cabelos-arte/`. A verificação requer acesso à conta Google e o arquivo ou tag fornecido pelo Search Console. Não solicitar senhas ou tokens no chat.
-2. Enviar `https://andrebilert.github.io/angela-roh-cabelos-arte/sitemap.xml` nessa propriedade e inspecionar a página inicial para solicitar indexação. Publicação não significa indexação imediata.
+1. Cadastrar no Google Search Console uma propriedade **Prefixo do URL**: `https://andrebilert.github.io/landing-page-roh/`. A verificação requer acesso à conta Google e o arquivo ou tag fornecido pelo Search Console. Não solicitar senhas ou tokens no chat.
+2. Enviar `https://andrebilert.github.io/landing-page-roh/sitemap.xml` nessa propriedade e inspecionar a página inicial para solicitar indexação. Publicação não significa indexação imediata.
 3. No Perfil da Empresa do Google, confirmar nome, categoria principal adequada, morada, telefone, horários reais, serviços e endereço do site. Vincular o site também nas redes. Não mudar o nome do estabelecimento para uma sequência artificial de palavras-chave.
 4. Manter fotografias próprias e avaliações autênticas de clientes, respondendo às avaliações pelo perfil da empresa. O site não atualiza automaticamente a nota ou o total de avaliações.
 5. Quando o domínio definitivo estiver conectado, atualizar todos os canonicals, URLs dos dados estruturados, sitemap e referências externas em conjunto. Não anunciar um domínio que ainda não esteja configurado.
 
 ## Rastreadores e IA
 
-`dist/robots.txt` mantém `User-agent: *` e `Allow: /`. No GitHub Pages de projeto, o arquivo publicado em `/angela-roh-cabelos-arte/robots.txt` **não controla** o domínio: o arquivo efetivo para crawlers é `https://andrebilert.github.io/robots.txt`. Deve-se conferir essa URL antes de afirmar que regras locais permitem/bloqueiam robôs. Um domínio próprio colocando o projeto na raiz passa a usar o robots.txt distribuído com este site.
+`dist/robots.txt` mantém `User-agent: *` e `Allow: /`. No GitHub Pages de projeto, o arquivo publicado em `/landing-page-roh/robots.txt` **não controla** o domínio: o arquivo efetivo para crawlers é `https://andrebilert.github.io/robots.txt`. Deve-se conferir essa URL antes de afirmar que regras locais permitem/bloqueiam robôs. Um domínio próprio colocando o projeto na raiz passa a usar o robots.txt distribuído com este site.
 
 Na validação de 11/10/2026, o endereço da raiz respondeu **404**, indicando ausência de robots nesse endereço. Portanto, não há regra robots na raiz bloqueando este projeto. O arquivo distribuído com o projeto foi conferido e preservado; não foi apresentado como uma configuração nova de permissão no domínio inteiro.
 

@@ -5,3 +5,6 @@ node_modules/
 artifacts/
 .env
 .env.*
+
+# Documentação mantida apenas neste computador.
+/README.md
