@@ -92,13 +92,5 @@
       if (animation.effect.target.contains(event.target)) animation.cancel();
     });
   });
-  document.querySelectorAll('.faq details').forEach(details => {
-    details.addEventListener('toggle', () => {
-      if (!details.open || preference.matches) return;
-      const paragraph = details.querySelector('p');
-      revealed.delete(paragraph);
-      arrive(paragraph);
-    });
-  });
   updateScroll();
 })();

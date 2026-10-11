@@ -11,6 +11,8 @@ Site responsivo da especialista em alisamentos em Carnaxide, Oeiras. Textos em p
 - `dist/app.js`: menu, diálogos e preparação da mensagem de marcação.
 - `dist/carousel.js`: carrossel contínuo de três prémios/formações, com setas externas e navegação por toque e teclado.
 - `dist/hero-video.js`, `motion.js` e `sections.js`: vídeo, animações de entrada, divisórias e indicação da seção atual no menu.
+- `dist/faq.js`: perguntas com abertura e fecho suaves, interrupção de animações ao clicar rapidamente, teclado e apenas uma resposta expandida.
+- `dist/mobile-booking.js`: barra de contacto no celular, apresentada depois do botão principal e com espaço inferior medido automaticamente.
 - `dist/smooth-scroll.js` e `dist/vendor/`: rolagem suave no computador com Lenis local e respetiva licença.
 - `dist/assets/`: imagens WebP, fontes locais, vídeo e ícones AR.
 - `.github/workflows/pages.yml`: validação do JavaScript e publicação automática no GitHub Pages.
@@ -30,6 +32,10 @@ Abra http://localhost:8090.
 ## Conteúdo
 
 Celulares recebem o mesmo conteúdo, vídeo, carrossel contínuo e transições entre seções, com composição adaptada e rolagem nativa por toque. No computador, a rodinha do mouse tem desaceleração suave e os links do menu percorrem a página em 1,25 segundo. A aceleração do carrossel ao passar o mouse aplica-se a dispositivos com mouse. A preferência de movimento reduzido desativa animações e reprodução automática; o conteúdo permanece acessível.
+
+A barra móvel “O seu liso começa aqui” aparece apenas depois que o botão principal do hero passa acima do cabeçalho. Ao voltar ao início, ela desaparece. O espaço inferior acompanha a altura real da barra, incluindo a área segura do dispositivo, para permitir acesso ao fim da página. Sem JavaScript, os contactos do cabeçalho, hero e restante conteúdo continuam disponíveis.
+
+“Morenas e louras iluminadas” tem cartão próprio entre os três cuidados principais, sem repetição na lista de outros serviços. A apresentação profissional usa “especialista em alisamento”. A revisão de português de Portugal inclui “madeixas”, “louro/louras”, “historial”, “contacto”, “marcação” e “maquilhagem”; nomes dos certificados e relatos das clientes mantêm a sua origem.
 
 A marcação é confirmada diretamente com a Angela no WhatsApp. O formulário apenas prepara a mensagem no navegador. Não armazena respostas, processa pagamentos ou confirma reservas automaticamente.
 

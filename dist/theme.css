@@ -1,4 +1,4 @@
-/* Angela R.: preto e dourado · especialista em lisos. */
+/* Angela R.: preto e dourado · especialista em alisamento. */
 :root {
   color-scheme: dark;
   --paper: #1b1915;
@@ -303,6 +303,12 @@ html.has-smooth-scroll { scroll-behavior: auto; }
 .credentials-footer { display: block; min-height: 28px; padding-right: 60px; }
 .credentials-footer > p { max-width: none; }
 .credentials-controls [hidden] { display: none; }
+/* Equal prominence for straightening, illuminated colour and hair care. */
+.care-options { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.care-item p { max-width: none; }
+@media(max-width:1000px) {
+  .care-options { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}
 @media(max-width:720px) {
   .hero-media::before { display: none; }
   .hero-video, .hero-poster { mask-image: none; }

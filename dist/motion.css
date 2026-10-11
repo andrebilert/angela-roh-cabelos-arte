@@ -63,6 +63,9 @@
 .credential-image:hover img, .credential-image:focus-visible img { transform: scale(1.035); }
 .faq summary { transition: color .25s ease; }
 .faq summary:hover { color: #dededb; }
+.faq-list.is-enhanced summary:focus-visible { outline-offset: -3px; }
+.faq-list.is-enhanced summary > span { transform: rotate(0deg); transition: transform .3s ease; }
+.faq-list.is-enhanced summary[aria-expanded="true"] > span { transform: rotate(45deg); }
 
 @media (prefers-reduced-motion: no-preference) {
   .motion-ready .hero h1 em { animation: silver-text 1.6s ease-out .2s both; }
