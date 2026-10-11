@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://andrebilert.github.io/angela-roh-cabelos-arte/sitemap.xml
