@@ -1,4 +1,4 @@
-# Angela Roh · Cabelos & Arte
+# Angela Roh
 
 Site responsivo do salão em Carnaxide, Oeiras, com apresentação, cuidados capilares, prémios e certificados, fotografias, vídeo, localização e contacto pelo WhatsApp. Textos em português de Portugal.
 
