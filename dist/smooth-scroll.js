@@ -1,4 +1,4 @@
-/* Light wheel inertia on desktop; native scrolling on touch and reduced motion. */
+/* Visible wheel easing on desktop; native scrolling on touch and reduced motion. */
 (() => {
   if (!window.Lenis) return;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
@@ -17,7 +17,7 @@
     if (!lenis) {
       lenis = new Lenis({
         autoRaf: true,
-        lerp: .12,
+        lerp: .065,
         smoothWheel: true,
         syncTouch: false,
         anchors: false,
@@ -44,7 +44,7 @@
     // Focusing a link can move the native viewport before its click fires.
     lenis.reset();
     if (location.hash !== anchor.hash) history.pushState(null, '', anchor.hash);
-    lenis.scrollTo(target, {onComplete: () => {
+    lenis.scrollTo(target, {duration: 1.25, lerp: 0, onComplete: () => {
       const hadTabindex = target.hasAttribute('tabindex');
       if (!hadTabindex) target.setAttribute('tabindex', '-1');
       target.focus({preventScroll: true});

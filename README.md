@@ -29,7 +29,7 @@ Abra http://localhost:8090.
 
 ## Conteúdo
 
-Celulares recebem o mesmo conteúdo, vídeo, carrossel contínuo e transições entre seções, com composição adaptada e rolagem nativa por toque. A aceleração do carrossel ao passar o mouse aplica-se a dispositivos com mouse. A preferência de movimento reduzido desativa animações e reprodução automática; o conteúdo permanece acessível.
+Celulares recebem o mesmo conteúdo, vídeo, carrossel contínuo e transições entre seções, com composição adaptada e rolagem nativa por toque. No computador, a rodinha do mouse tem desaceleração suave e os links do menu percorrem a página em 1,25 segundo. A aceleração do carrossel ao passar o mouse aplica-se a dispositivos com mouse. A preferência de movimento reduzido desativa animações e reprodução automática; o conteúdo permanece acessível.
 
 A marcação é confirmada diretamente com a Angela no WhatsApp. O formulário apenas prepara a mensagem no navegador. Não armazena respostas, processa pagamentos ou confirma reservas automaticamente.
 
