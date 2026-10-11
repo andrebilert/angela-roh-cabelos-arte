@@ -1,6 +1,6 @@
 # Angela R.
 
-Site responsivo da especialista em alisamentos em Carnaxide, Oeiras. Textos em português de Portugal, identidade em preto e dourado, marca AR, vídeo no hero, serviços, comparações de cabelo, prémios e formações, avaliações e contacto pelo WhatsApp.
+Site responsivo da especialista em alisamentos em Carnaxide, Oeiras. Textos em português de Portugal, identidade em preto e dourado, marca AR, vídeo no hero, serviços, fotografias reais dos trabalhos, prémios e formações, avaliações e contacto pelo WhatsApp.
 
 **Site:** https://andrebilert.github.io/angela-roh-cabelos-arte/
 
@@ -10,6 +10,7 @@ Site responsivo da especialista em alisamentos em Carnaxide, Oeiras. Textos em p
 - `dist/*.css`: layout responsivo, identidade, tipografia, galeria e separação visual das seções.
 - `dist/app.js`: menu, diálogos e preparação da mensagem de marcação.
 - `dist/carousel.js`: carrossel contínuo de três prémios/formações, com setas externas e navegação por toque e teclado.
+- `dist/results.js` e `dist/results.css`: galeria compacta das seis fotografias de trabalhos fornecidas pelo usuário, com navegação por setas, toque e teclado, sem ampliação.
 - `dist/hero-video.js`, `motion.js` e `sections.js`: vídeo, animações de entrada, divisórias e indicação da seção atual no menu.
 - `dist/faq.js`: perguntas com abertura e fecho suaves, interrupção de animações ao clicar rapidamente, teclado e apenas uma resposta expandida.
 - `dist/mobile-booking.js`: barra de contacto no celular, apresentada depois do botão principal e com espaço inferior medido automaticamente.
@@ -39,7 +40,9 @@ A barra móvel “O seu liso começa aqui” aparece apenas depois que o botão 
 
 A marcação é confirmada diretamente com a Angela no WhatsApp. O formulário apenas prepara a mensagem no navegador. Não armazena respostas, processa pagamentos ou confirma reservas automaticamente.
 
-O hero usa um recorte do vídeo fornecido pelo usuário. As comparações de cabelo receberam edição com IA e não preservam todos os detalhes das fotografias originais. As imagens dos prémios e certificados são apresentações gráficas recriadas a partir dos documentos fornecidos; não substituem os documentos oficiais.
+O hero usa um recorte do vídeo fornecido pelo usuário. A galeria usa as seis fotografias reais enviadas em 11/10/2026, sem retoques ou geração com IA. A captura do Instagram foi recortada para remover a interface e preservar a pessoa inteira; o usuário confirmou que o trabalho é da Angela. Uma segunda fotografia teve apenas a faixa preta superior recortada. Os derivados WebP reduzem o tamanho dos arquivos e preservam as proporções. As comparações editadas anteriores deixam de aparecer na página e os arquivos permanecem preservados. As imagens dos prémios e certificados continuam como apresentações gráficas recriadas a partir dos documentos fornecidos; não substituem os documentos oficiais.
+
+A proposta de reduzir os textos foi cancelada pelo usuário antes da publicação. Os textos, as nove seções, o hero, os serviços e as avaliações mantêm a apresentação anterior; esta atualização altera apenas a galeria dos trabalhos.
 
 O destaque de avaliações apresenta a nota 5,0 e o patamar de 116+ avaliações confirmado pelo usuário. Não há atualização automática. Os cartões apresentam Ana Catarina Silva, Tania Vicente e Eli Suarez, a partir dos relatos fornecidos pelo usuário, com ajustes de ortografia e pontuação e seleção de trechos sem mudar o sentido. Ana e Tania foram também conferidas diretamente nos perfis públicos do Google Maps; as suas fotos públicas estão em arquivos WebP locais, sem geração com IA. Eli foi conferida na captura fornecida e usa as iniciais. Os cartões não têm links individuais nem referências a diretórios; o acesso geral às avaliações continua no Google. A consulta não disponibilizou todas as avaliações do salão.
 

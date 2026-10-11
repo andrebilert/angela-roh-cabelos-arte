@@ -26,7 +26,7 @@
   <link rel="preload" as="image" fetchpriority="high" href="assets/hero-loiro-poster.webp">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="theme.css">
-  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="results.css">
   <link rel="stylesheet" href="brand.css">
   <link rel="stylesheet" href="motion.css">
   <link rel="stylesheet" href="vendor/lenis-1.3.26/lenis.css">
@@ -41,6 +41,7 @@
   <script src="hero-video.js" defer></script>
   <script src="mobile-booking.js" defer></script>
   <script src="faq.js" defer></script>
+  <script src="results.js" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -188,10 +189,16 @@
     <div class="section-panel">
     <section class="showcase section wrap" id="galeria" aria-labelledby="showcase-title">
       <div class="section-heading"><div><p class="eyebrow">COR E CUIDADO</p><h2 id="showcase-title">Em cada <em>detalhe.</em></h2></div></div>
-      <div class="showcase-grid">
-        <figure class="showcase-figure"><div class="showcase-labels" aria-hidden="true"><span>Antes</span><svg class="icon"><use href="#i-arrow"/></svg><span>Depois</span></div><div class="showcase-image"><img src="assets/gallery-air-touch-v2-480.webp" srcset="assets/gallery-air-touch-v2-480.webp 480w, assets/gallery-air-touch-v2-900.webp 900w" sizes="(max-width:560px) calc(100vw - 48px), 340px" width="1536" height="1024" loading="lazy" decoding="async" alt="Comparação editada de cabelo castanho ondulado e louro com madeixas"></div><figcaption><h3>Madeixas Air Touch</h3></figcaption></figure>
-        <figure class="showcase-figure"><div class="showcase-labels" aria-hidden="true"><span>Antes</span><svg class="icon"><use href="#i-arrow"/></svg><span>Depois</span></div><div class="showcase-image showcase-pair"><img src="assets/gallery-loiro-antes-320.webp" srcset="assets/gallery-loiro-antes-320.webp 320w, assets/gallery-loiro-antes-640.webp 640w" sizes="(max-width:560px) 45vw, 170px" width="1086" height="1448" loading="lazy" decoding="async" alt="Versão editada do cabelo louro antes, com textura e fios naturais"><img src="assets/gallery-loiro-depois-v2-320.webp" srcset="assets/gallery-loiro-depois-v2-320.webp 320w, assets/gallery-loiro-depois-v2-640.webp 640w" sizes="(max-width:560px) 45vw, 170px" width="1086" height="1448" loading="lazy" decoding="async" alt="Versão editada do cabelo louro depois, com textura e fios naturais"></div><figcaption><h3>Alisamento em cabelo louro</h3></figcaption></figure>
-        <figure class="showcase-figure"><div class="showcase-labels" aria-hidden="true"><span>Antes</span><svg class="icon"><use href="#i-arrow"/></svg><span>Depois</span></div><div class="showcase-image"><img src="assets/gallery-castanho-480.webp" srcset="assets/gallery-castanho-480.webp 480w, assets/gallery-castanho-900.webp 900w" sizes="(max-width:560px) calc(100vw - 48px), 340px" width="1536" height="1024" loading="lazy" decoding="async" alt="Comparação editada de cabelo castanho encaracolado e alinhado"></div><figcaption><h3>Alisamento em cabelo castanho</h3></figcaption></figure>
+      <div class="results-gallery">
+        <div class="showcase-grid" id="results-track" tabindex="0" role="region" aria-label="Fotografias de trabalhos da Angela. Use as setas ou deslize para ver mais.">
+        <figure class="showcase-figure"><div class="showcase-image"><img src="assets/resultado-castanho-400.webp" srcset="assets/resultado-castanho-400.webp 400w, assets/resultado-castanho-800.webp 767w" sizes="(max-width:720px) 70vw, (max-width:1000px) 40vw, 360px" width="767" height="1441" loading="lazy" decoding="async" alt="Cabelo castanho comprido, visto de costas, com acabamento liso e brilho"></div></figure>
+        <figure class="showcase-figure"><div class="showcase-image"><img src="assets/resultado-comprido-400.webp" srcset="assets/resultado-comprido-400.webp 400w, assets/resultado-comprido-800.webp 560w" sizes="(max-width:720px) 70vw, (max-width:1000px) 40vw, 360px" width="560" height="1066" loading="lazy" decoding="async" alt="Cabelo escuro comprido e alinhado, visto de costas"></div></figure>
+        <figure class="showcase-figure"><div class="showcase-image"><img src="assets/resultado-movimento-400.webp" srcset="assets/resultado-movimento-400.webp 400w, assets/resultado-movimento-800.webp 800w" sizes="(max-width:720px) 70vw, (max-width:1000px) 40vw, 360px" width="1325" height="2048" loading="lazy" decoding="async" alt="Cabelo castanho com reflexos quentes, brilho e movimento"></div></figure>
+        <figure class="showcase-figure"><div class="showcase-image"><img src="assets/resultado-escuro-400.webp" srcset="assets/resultado-escuro-400.webp 400w, assets/resultado-escuro-800.webp 569w" sizes="(max-width:720px) 70vw, (max-width:1000px) 40vw, 360px" width="569" height="1227" loading="lazy" decoding="async" alt="Cabelo escuro com brilho, mostrado com um pente"></div></figure>
+        <figure class="showcase-figure"><div class="showcase-image"><img src="assets/resultado-brilho-400.webp" srcset="assets/resultado-brilho-400.webp 400w, assets/resultado-brilho-800.webp 785w" sizes="(max-width:720px) 70vw, (max-width:1000px) 40vw, 360px" width="785" height="1283" loading="lazy" decoding="async" alt="Pormenor do brilho de cabelo preto durante a finalização"></div></figure>
+        <figure class="showcase-figure"><div class="showcase-image"><img src="assets/resultado-detalhe-400.webp" srcset="assets/resultado-detalhe-400.webp 400w, assets/resultado-detalhe-800.webp 739w" sizes="(max-width:720px) 70vw, (max-width:1000px) 40vw, 360px" width="739" height="2048" loading="lazy" decoding="async" alt="Pormenor de uma madeixa de cabelo escuro, com textura e brilho"></div></figure>
+        </div>
+        <div class="results-controls" hidden><button type="button" data-results-step="-1" aria-label="Ver fotografias anteriores" aria-controls="results-track"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="15,5 8,12 15,19"/></svg></button><button type="button" data-results-step="1" aria-label="Ver próximas fotografias" aria-controls="results-track"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9,5 16,12 9,19"/></svg></button></div>
       </div>
     </section>
     </div>

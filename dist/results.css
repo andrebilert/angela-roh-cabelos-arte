@@ -1,0 +1,30 @@
+/* Real photographs, complete framing, no zoom or synthetic comparisons. */
+.showcase .section-heading { display: block; }
+.showcase .section-heading h2 { font-size: clamp(38px, 4vw, 58px); line-height: 1.1; }
+.results-gallery { position: relative; padding-inline: 52px; max-width: 1040px; margin-inline: auto; }
+.showcase-grid { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding-block: 4px; max-width: none; }
+.showcase-grid::-webkit-scrollbar { display: none; }
+.showcase-figure { flex: 0 0 calc((100% - 40px) / 3); min-width: 0; margin: 0; scroll-snap-align: start; }
+.showcase-figure:last-child { width: auto; }
+.showcase-image { height: 460px; background: #11100e; border: 1px solid #c3a16b45; overflow: hidden; }
+.showcase-image img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.results-controls { position: absolute; inset: 0; pointer-events: none; }
+.results-controls[hidden] { display: none; }
+.results-controls button { position: absolute; top: 50%; transform: translateY(-50%); display: grid; place-items: center; pointer-events: auto; width: 40px; height: 44px; padding: 0; color: #e3c38c; background: transparent; border: 1px solid #c3a16ba6; border-radius: 6px; transition: background .2s, color .2s; }
+.results-controls button[data-results-step="-1"] { left: 0; }
+.results-controls button[data-results-step="1"] { right: 0; }
+.results-controls button:hover:not(:disabled) { color: #171612; background: #e3c38c; }
+.results-controls button:disabled { opacity: .25; cursor: default; }
+@media(max-width:1000px) {
+  .showcase-figure { flex-basis: calc((100% - 20px) / 2); }
+  .showcase-image { height: 420px; }
+}
+@media(max-width:720px) {
+  .results-gallery { padding-inline: 0; padding-bottom: 56px; }
+  .showcase-grid { gap: 16px; scroll-padding-right: 16px; }
+  .showcase-figure { flex-basis: 82%; }
+  .showcase-image { height: auto; aspect-ratio: 9 / 16; }
+  .results-controls button { top: auto; bottom: 0; transform: none; }
+  .results-controls button[data-results-step="-1"] { left: auto; right: 52px; }
+}
+@media(prefers-reduced-motion:reduce) { .results-controls button { transition: none; } }
