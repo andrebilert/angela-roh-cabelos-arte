@@ -7,6 +7,8 @@ Site responsivo da especialista em alisamentos em Carnaxide, Oeiras. Textos em p
 ## Estrutura
 
 - `dist/index.html`: conteúdo, dados estruturados e metadados.
+- `dist/robots.txt` e `dist/sitemap.xml`: rastreamento e endereço público da página.
+- `SEO.md`: ajustes de busca local e próximos passos no Google Business Profile e Search Console.
 - `dist/*.css`: layout responsivo, identidade, tipografia, galeria e separação visual das seções.
 - `dist/app.js`: menu, diálogos e preparação da mensagem de marcação.
 - `dist/carousel.js`: carrossel contínuo de três prémios/formações, com setas externas e navegação por toque e teclado.
@@ -42,7 +44,7 @@ A marcação é confirmada diretamente com a Angela no WhatsApp. O formulário a
 
 O hero usa um recorte do vídeo fornecido pelo usuário. A galeria usa as seis fotografias reais enviadas em 11/10/2026, sem retoques ou geração com IA. A pedido do usuário, também inclui somente a imagem da direita da comparação Air Touch previamente editada com IA; foi recortada sem novos retoques e aparece individualmente, sem o antes ou a seta. A captura do Instagram foi recortada para remover a interface e preservar a pessoa inteira; o usuário confirmou que o trabalho é da Angela. Uma segunda fotografia teve apenas a faixa preta superior recortada. Os derivados WebP reduzem o tamanho dos arquivos e preservam as proporções. As comparações editadas anteriores deixam de aparecer na página e os arquivos permanecem preservados. As imagens dos prémios e certificados continuam como apresentações gráficas recriadas a partir dos documentos fornecidos; não substituem os documentos oficiais.
 
-A proposta de reduzir os textos foi cancelada pelo usuário antes da publicação. Os textos, as nove seções, o hero, os serviços e as avaliações mantêm a apresentação anterior; esta atualização altera apenas a galeria dos trabalhos.
+A proposta de reduzir os textos foi cancelada pelo usuário antes da publicação. Na atualização de busca local, o usuário também pediu preservar a apresentação: o corpo do HTML, os textos, as nove seções, os links e a navegação permanecem integralmente iguais. Apenas o título de busca, os metadados, os dados estruturados e o sitemap foram aprimorados. Os metadados identificam Rosângela também como Angela R./Angela Roh e incluem os 16 anos de experiência profissional confirmados pelo usuário; não inferem a data de abertura do salão. Veja [SEO.md](SEO.md) para os próximos passos no Google Maps e Search Console.
 
 O destaque de avaliações apresenta a nota 5,0 e o patamar de 116+ avaliações confirmado pelo usuário. Não há atualização automática. Os cartões apresentam Ana Catarina Silva, Tania Vicente e Eli Suarez, a partir dos relatos fornecidos pelo usuário, com ajustes de ortografia e pontuação e seleção de trechos sem mudar o sentido. Ana e Tania foram também conferidas diretamente nos perfis públicos do Google Maps; as suas fotos públicas estão em arquivos WebP locais, sem geração com IA. Eli foi conferida na captura fornecida e usa as iniciais. Os cartões não têm links individuais nem referências a diretórios; o acesso geral às avaliações continua no Google. A consulta não disponibilizou todas as avaliações do salão.
 
