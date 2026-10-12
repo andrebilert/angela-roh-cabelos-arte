@@ -48,6 +48,14 @@ O tempo de cache de dez minutos é definido pelo GitHub Pages. Não foi adiciona
 
 Referências de desempenho: [pontuação do Lighthouse](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) e [otimização de LCP](https://web.dev/articles/optimize-lcp).
 
+## Imagens dos serviços
+
+Em 11/10/2026, a pedido do usuário, foram geradas três imagens com a ferramenta integrada de geração de imagens para os cartões de alisamento, morenas/louras iluminadas e cuidado capilar. São representações visuais dos serviços, sem declaração de resultados de clientes ou de equipamentos específicos. A galeria dos sete trabalhos fornecidos pelo usuário, os textos, o vídeo e os dados estruturados permaneceram iguais.
+
+Os originais PNG e os prompts completos estão preservados localmente em `artifacts/service-images/` e `artifacts/service-image-prompts.json`, fora do Git. Os arquivos publicados são `dist/assets/servico-*-480.webp` e `dist/assets/servico-*-960.webp`, com carregamento tardio e dimensões reservadas. A preparação só redimensionou e comprimiu os arquivos gerados. O novo CSS dos cartões foi incluído no bundle existente; continua havendo uma única requisição de CSS.
+
+As referências de madeixas foram consultadas na [L'Oréal Professionnel Portugal](https://www.lorealprofessionnel.pt/cuidados-profissionais-descubra-a-tecnica-da-foilyage) e na [Wella Professionals](https://www.wella.com/professional/en-US/blog/hair-color/dimensional-brunette-hair). Para os cuidados gerais, foi consultada a [American Academy of Dermatology](https://www.aad.org/public/everyday-care/hair-scalp-care/hair/healthy-hair-tips). Nenhuma fotografia dessas fontes foi copiada para o site.
+
 ## Referências oficiais de busca
 
 - [Negócios locais e dados estruturados](https://developers.google.com/search/docs/appearance/structured-data/local-business)

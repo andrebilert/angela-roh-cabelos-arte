@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / 'dist'
 SOURCES = (
     'styles.css', 'theme.css', 'results.css', 'brand.css', 'motion.css',
-    'vendor/lenis-1.3.26/lenis.css', 'typography.css', 'sections.css',
+    'vendor/lenis-1.3.26/lenis.css', 'typography.css', 'sections.css', 'services-images.css',
 )
 
 def main():
