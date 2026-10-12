@@ -15,6 +15,18 @@
   object-fit: cover;
   object-position: center;
 }
+.care-item:nth-child(1) .care-visual img {
+  transform: scale(1.8);
+  transform-origin: 46% 55%;
+}
+.care-item:nth-child(2) .care-visual img {
+  transform: scale(1.28);
+  transform-origin: 50% 58%;
+}
+.care-item:nth-child(3) .care-visual img {
+  transform: scale(1.45);
+  transform-origin: 54% 54%;
+}
 .care-item > .care-description { min-width: 0; }
 @media (min-width: 1001px) {
   .care-item { align-content: start; grid-template-rows: auto 1fr; }
